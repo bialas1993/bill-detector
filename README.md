@@ -6,11 +6,17 @@ The scanner takes a poorly scanned image, finds the corners of the document, app
 
 ### Install
 ```bash
-pipenv install && pipenv shell
+virtualenv env
+source env/bin/activate
 pip install -r requirements.txt
 ```
 
 ### Usage
+```
+python main.py --image sample_images/paragon-fiskalny-nip.jpg
+```
+
+* Scan doc
 ```
 python scan.py (--images <IMG_DIR> | --image <IMG_PATH>) [-i]
 ```
