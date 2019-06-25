@@ -21,7 +21,6 @@ if __name__ == "__main__":
     if file_path:
         path = scanner.scan(file_path)
         print("scan completed.")
-        print( ocr(path))
-
+        ocr(path)
     else:
         raise Exception("Can not read file %s" % file_path)
